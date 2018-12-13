@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
+import FetchUsers from './FetchUsers'
+
 class App extends Component {
   render() {
     return (
-      <div >
-        task
-      </div>
+      <FetchUsers />
     )
   }
 }
 
-export default App;
+export default App
