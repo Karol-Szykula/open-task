@@ -16,7 +16,9 @@ class FetchUsers extends Component {
             <div>
                 {this.state.data && this.state.data.results.map
                     ? this.state.data.results.map(user => (
-                        <div>
+                        <div
+                            key={user.email}
+                        >
                             <div>
                                 <img src={user.picture.thumbnail} alt="user" />
                             </div>
